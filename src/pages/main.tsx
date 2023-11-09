@@ -1,4 +1,3 @@
-import React from 'react';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 import About from '../sections/about';
@@ -8,7 +7,7 @@ import Skills from '../sections/skills';
 import Intro from '../sections/intro';
 import Projects from '../sections/projects';
 export default function Main() {
-    
+
     return (
         <>
             <div id="content">

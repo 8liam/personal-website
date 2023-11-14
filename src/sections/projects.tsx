@@ -15,7 +15,7 @@ const projects = [
         technologies: 'React',
         websiteLink: 'https://liamg.zip/',
         githubLink: 'https://github.com/8liam/personal-website'
-    }
+    },
     {
         title: 'Minecraft Account Tool',
         description: 'Displays Account Information and Skin about any Minecraft Username.',

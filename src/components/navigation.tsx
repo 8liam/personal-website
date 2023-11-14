@@ -1,16 +1,15 @@
-import { RiInformationLine, RiUserLine, RiBook2Line, RiLightbulbLine, RiContactsLine } from 'react-icons/ri';
 
+export default function Navigation() {
 
-export default function Navigation () {
-    return(
+    return (
         <>
-        <div className="navigation">
-            <a href="#intro"><RiInformationLine /></a> {/* RiInformationLine for "info" */}
-            <a href="#about"><RiUserLine /></a> {/* RiUserLine for "about" */}
-            <a href="#education"><RiBook2Line /></a> {/* RiBook2Line for "education" */}
-            <a href="#projects"><RiLightbulbLine /></a> {/* RiLightbulbLine for "projects" */}
-            <a href="#contact"><RiContactsLine /></a> {/* RiContactsLine for "contact" */}
-        </div>
+            <div className="navigation">
+                <a href="#intro" className="navigation-link">intro</a>
+                <a href="#about" className="navigation-link">about</a>
+                <a href="#education" className="navigation-link">education</a>
+                <a href="#projects" className="navigation-link">projects</a>
+                <a href="#contact" className="navigation-link">contact</a>
+            </div>
         </>
     )
 }

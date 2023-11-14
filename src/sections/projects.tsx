@@ -3,14 +3,20 @@ import { FaGithub } from 'react-icons/fa';
 
 const projects = [
     {
-        title: 'Spotify Live Lyrics',
-        description: "Displays the song lyrics of what you're listening to on Spotify or Soundcloud.",
+        title: 'FMLyrics',
+        description: "Displays the song lyrics of what you're listening to on Spotify or Soundcloud via the Last.fm API.",
         technologies: 'React / TypeScript',
-        websiteLink: '',
-        githubLink: 'https://github.com/8liam/'
+        websiteLink: 'https://fmlyrics.netlify.app/',
+        githubLink: 'https://github.com/8liam/FMLyrics'
     },
     {
-        
+        title: 'This website!',
+        description: "My personal portfolio website",
+        technologies: 'React',
+        websiteLink: 'https://liamg.zip/',
+        githubLink: 'https://github.com/8liam/personal-website'
+    }
+    {
         title: 'Minecraft Account Tool',
         description: 'Displays Account Information and Skin about any Minecraft Username.',
         technologies: 'React',

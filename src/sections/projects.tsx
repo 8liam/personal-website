@@ -1,5 +1,6 @@
 import { TbWorld } from 'react-icons/tb';
 import { FaGithub } from 'react-icons/fa';
+import React from 'react';
 
 const projects = [
     {
@@ -32,22 +33,29 @@ const ProjectGrid = () => {
         <div className="grid-container">
             {projects.map((project, index) => (
                 <div className="grid-item" key={index}>
-                    <div className="project-text">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                    </div>
-                    <div className="project-technologies">
-                        <p>{project.technologies}</p>
-                    </div>
-                    <div className="icon-card-container">
-                        {project.websiteLink && (
-                            <a className="icon" href={project.websiteLink} target="_blank" rel="noopener noreferrer">
-                                <TbWorld size="2rem" />
-                            </a>
-                        )}
-                        <a className="icon" href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                            <FaGithub size="1.9rem" />
-                        </a>
+                    <div className="project-content">
+
+                        <div className="project-title">
+                            <h3>{project.title}</h3>
+                        </div>
+                        <div className="project-text">
+                            <p>{project.description}</p>
+                        </div>
+                        <div className="project-footer">
+                            <div className="project-technologies">
+                                <p>{project.technologies}</p>
+                            </div>
+                            <div className="icon-card-container">
+                                {project.websiteLink && (
+                                    <a className="icon" href={project.websiteLink} target="_blank" rel="noopener noreferrer">
+                                        <TbWorld size="2rem" />
+                                    </a>
+                                )}
+                                <a className="icon" href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                    <FaGithub size="1.9rem" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             ))}

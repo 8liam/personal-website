@@ -5,73 +5,15 @@
   src: url(Nintendo-DS-BIOS.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    line-height: 1.5;
-    font-weight: 400;
-    --background-color: #352F44;
-    --background-color-darker: rgba(54, 48, 69, 50%);
-    --heading-color: #FAF0E6;
-    --summary-color: #ffffe0;
-    --link-color: rgb(192, 170, 255);
-    --link-color-hover: rgba(0, 0, 0, 50%);
-    --selection-color: rgba(73, 62, 62, 0.5);
-    --icon-color: #fff;
-    --card-color: rgba(0, 0, 0, 50%);
-    --hover-color: rgb(192, 170, 255);
-    color: var(--heading-color);
-    background-color: var(--background-color);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    line-height: 1.5;
-    font-weight: 400;
-    --background-color: #ffffff;
-    --background-color-darker: #f3f3f3;
-    --heading-color: #000000;
-    --summary-color: #0e0e0e;
-    --link-color: #9b3eff;
-    --link-color-hover: #5700b4;
-    --selection-color: #584565;
-    --icon-color: #000;
-    --card-color: #fff;
-    --hover-color: rgb(65, 0, 134);
-    color: var(--heading-color);
-    background-color: var(--background-color);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-}
-
-/*
 :root {
-  line-height: 1.5;
-  font-weight: 400;
-  --background-color-dark: #11070e;
-  --background-color-dark-darker: #0a0408;
-  --heading-color-dark: #D8DEE9;
-  --summary-color-dark: #ffffe0;
-  --link-color-dark: #FFFE3E;
-  --link-color-hover-dark: #5E81AC;
-  --selection-color-dark: #4C566A;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --selection-color: rgba(73, 62, 62, 0.5);
+}
 
-  --background-color: #ffffff;
-  --background-color-darker: #f3f3f3;
-  --heading-color: #000000;
-  --summary-color: #0e0e0e;
-  --link-color: #9b3eff;
-  --link-color-hover: #5700b4;
-  --selection-color: #584565;
+body {
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
   color: var(--heading-color);
   background-color: var(--background-color);
   font-synthesis: none;
@@ -79,8 +21,39 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  transition: background-color 0.5s, color 0.5s;
 }
-*/
+
+.dark-theme {
+  --background-color: #352F44;
+  --background-color-darker: rgba(54, 48, 69, 50%);
+  --heading-color: #FAF0E6;
+  --summary-color: #ffffe0;
+  --link-color: rgb(192, 170, 255);
+  --link-color-hover: rgba(0, 0, 0, 50%);
+  --card-color: rgba(0, 0, 0, 50%);
+  --hover-color: rgb(192, 170, 255);
+  --text-color: var(--heading-color);
+}
+
+.light-theme {
+  --background-color: #ffffff;
+  --background-color-darker: #f3f3f3;
+  --heading-color: #000000;
+  --summary-color: #0e0e0e;
+  --link-color: #9b3eff;
+  --link-color-hover: #5700b4;
+  --card-color: #fff;
+  --hover-color: rgb(65, 0, 134);
+  --text-color: var(--heading-color);
+}
+
+.theme-toggler {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding-inline: 2%;
+}
 
 body {
   font-family: 'NTR', sans-serif;
@@ -91,6 +64,11 @@ body {
 .pixel-font {
   font-family: nintendoDS !important;
   font-size: 1.15rem;
+}
+
+.section h1 {
+  font-family: nintendoDS !important;
+  font-size: 2em;
 }
 
 

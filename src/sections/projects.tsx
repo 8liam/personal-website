@@ -1,6 +1,5 @@
 import { TbWorld } from 'react-icons/tb';
 import { FaGithub } from 'react-icons/fa';
-import React from 'react';
 
 const projects = [
     {

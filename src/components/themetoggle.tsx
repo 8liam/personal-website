@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { MdOutlineNightsStay } from 'react-icons/md';
+import { useState, useEffect } from 'react';
 import { FaRegLightbulb, FaLightbulb } from 'react-icons/fa';
 
 
@@ -10,7 +9,7 @@ const ThemeToggle = () => {
     useEffect(() => {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-        const handleChange = (event) => {
+        const handleChange = (event: { matches: boolean | ((prevState: boolean) => boolean); }) => {
             setIsDarkMode(event.matches);
         };
 

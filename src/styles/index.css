@@ -5,6 +5,18 @@
   src: url(Nintendo-DS-BIOS.ttf);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #352F44;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+  }
+}
+
 :root {
   --line-height: 1.5;
   --font-weight: 400;
